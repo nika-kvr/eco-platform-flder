@@ -98,6 +98,7 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -548,11 +549,12 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   position: relative;
 }
 
 .section-title h2 {
+  font-family: "Dino";
   font-size: 32px;
   /* font-weight: 300; */
   margin-bottom: 15px;
@@ -660,6 +662,10 @@ section,
   padding: 10px 0 0 0;
   display: flex;
 }
+.about .content ul li i {
+  display: flex;
+  align-items: center;
+}
 
 .about .content ul i {
   color: var(--accent-color);
@@ -725,7 +731,8 @@ section,
 }
 
 .cards .card-item h4 {
-  font-size: 24px;
+  font-family: "Dino", sans-serif;
+  font-size: 28px;
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
@@ -742,6 +749,16 @@ section,
   padding: 0;
 }
 
+.read-more {
+  color: #184e18;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+.read-more :hover {
+  color: #fff;
+}
+
 .cards .card-item:hover {
   background: var(--accent-color);
   padding: 30px 30px 70px 30px;
@@ -749,6 +766,7 @@ section,
 
 .cards .card-item:hover span,
 .cards .card-item:hover h4 a,
+.cards .card-item:hover h5,
 .cards .card-item:hover p {
   color: var(--contrast-color);
 }
@@ -1574,5 +1592,5 @@ section,
   opacity: 0;
 }
 p {
-  white-space: pre-line;
+  /* white-space: pre-line; */
 }
